@@ -21,9 +21,9 @@
       </tbody>
   </table>
 
-  <%= cl_image_tag("cuba_libre_cu3k5w", width: 400, height: 300, crop: :fill) %>
+  <%= cl_image_tag(@cocktail.photo, width: 400, height: 300, crop: :fill) %>
 
-  <p style="margin-top: 20px"><%= link_to "➕ Create new dose", new_cocktail_dose_path(@cocktail) %> | <%= link_to "⬅ Go Back to overview", cocktails_path(@cocktail) %></p>
+  <p style="margin-top: 20px"><%= link_to "➕ Create new dose", new_cocktail_dose_path(@cocktail) %> | <%= link_to "⬅ Go Back to overview", cocktails_path %></p>
 
 </div>
 
